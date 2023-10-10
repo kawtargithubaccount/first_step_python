@@ -12,3 +12,5 @@ def print_password(password: str)->bool:
     if(len(password)>5):
         print(password)
         return True
+    else: 
+        return False
