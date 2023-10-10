@@ -1,4 +1,5 @@
 from project_first import password as p
+from project_first import password as p
 
 
 def test_password():
@@ -19,3 +20,10 @@ def test_password():
     assert p.is_acceptable_password("pass1234word") == True
 
     print("The mission is done! Click 'Check Solution' to earn rewards!")
+
+    assert p.print_password("mama")==False
+    assert p.print_password("grandmam")==True
+
+    print("good code !!!!!")
+
+

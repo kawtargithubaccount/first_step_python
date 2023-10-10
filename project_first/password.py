@@ -7,3 +7,8 @@ def is_acceptable_password(password: str) -> bool:
         return True
     else:
         return False
+    
+def print_password(password: str)->bool:
+    if(len(password)>5):
+        print(password)
+        return True
