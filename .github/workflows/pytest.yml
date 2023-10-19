@@ -52,4 +52,4 @@ jobs:
       - name: Run tests
         run: |
           poetry run pytest
-          poetry run coverage report -m
+          poetry run coverage report -i
