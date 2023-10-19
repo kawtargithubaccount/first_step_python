@@ -11,6 +11,5 @@ def is_acceptable_password(password: str) -> bool:
 def print_password(password: str)->bool:
     if(len(password)>5):
         print(password)
-        return True
     else: 
-        return False
+        print("small password ")
