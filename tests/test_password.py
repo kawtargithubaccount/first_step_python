@@ -1,5 +1,4 @@
 from project_first import password as p
-from project_first import password as p
 
 
 def test_password():
