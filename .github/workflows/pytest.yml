@@ -67,8 +67,8 @@ jobs:
          files: coverage.svg
 
     - name: Commit files
-        if: steps.verify-changed-files.outputs.files_changed == 'true'
-        run: |
+      if: steps.verify-changed-files.outputs.files_changed == 'true'
+      run: |
          git config --local user.email "github-actions[bot]@users.noreply.github.com"
          git config --local user.name "github-actions[bot]"
          git add coverage.svg
@@ -78,5 +78,5 @@ jobs:
       if: steps.verify-changed-files.outputs.files_changed == 'true'
       uses: ad-m/github-push-action@master
       with:
-      github_token: ${{ secrets.github_token }}
-      branch: ${{ github.ref }}
+          github_token: ${{ secrets.github_token }}
+          branch: ${{ github.ref }}
