@@ -18,8 +18,9 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install poetry
-        poetry add pylint
-        poetry run pylint project_first/
+        poetry install
+
     - name: Analysing the code with pylint
       run: |
-        find . -name '*.py' -exec pylint {} \;
+        poetry run pylint project_first/
+
