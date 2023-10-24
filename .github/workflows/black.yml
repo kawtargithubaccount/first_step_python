@@ -13,4 +13,4 @@ jobs:
           pip install poetry
           poetry install
       - run: |
-          poetry run Black project_first/
+          poetry run black project_first/
