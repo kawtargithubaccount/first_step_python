@@ -12,5 +12,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install poetry
           poetry install
+          poetry add black
       - run: |
           poetry run black project_first/
