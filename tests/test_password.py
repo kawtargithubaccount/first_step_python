@@ -22,6 +22,7 @@ def test_password():
 
     assert p.print_password("mama")==False
     assert p.print_password("grandmam")==True
+    assert p.print_password("baba")==False
 
     print("good code !!!!!")
 
